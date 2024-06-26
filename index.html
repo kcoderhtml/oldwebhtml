@@ -14,8 +14,12 @@
 
             <p>
                 A website that is simply a collection of tags and attributes but created to be inspiring
-                and to be a reminder of the old web. q Q
+                and to be a reminder of the old web.
             </p>
+            <figure class="quote">
+                <q>The web was clunky, but it was charming.</q>
+                <figcaption>&mdash; unknown</figcaption>
+            </figure>
         </article>
     </main>
     <footer>
@@ -49,7 +53,7 @@
 
     main {
         padding: 1rem;
-        width: 20rem;
+        width: 33rem;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -59,6 +63,29 @@
     article {
         margin: 0 auto;
         text-align: center;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    .quote q {
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    .quote q:before {
+        content: '“';
+    }
+
+    .quote q:after {
+        content: '”';
+    }
+
+    .quote figcaption {
+        font-size: 1.2rem;
+        font-style: normal;
     }
 
     footer {
